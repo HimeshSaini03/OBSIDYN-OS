@@ -1,0 +1,17 @@
+{
+  "name": "obsidyn-see-ui",
+  "version": "1.0.0",
+  "description": "OBSIDYN Secure Execution Environment User Interface",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "OBSIDYN Dev",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  }
+}

@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Node
+node_modules/
+dist/
+
+# Data & Secrets (CRITICAL)
+data/vaults/*
+data/logs/*
+config/*.key
+*.secret
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+*.exe

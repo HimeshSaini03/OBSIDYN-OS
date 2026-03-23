@@ -1,0 +1,878 @@
+{
+  "vaults": [
+    {
+      "id": "bb16d93442",
+      "profile": "operations",
+      "label": "Ops_Archive_BB16D93442",
+      "path": "D:\\OBSOSv2\\OBSOS\\obsidyn-see\\data\\decoys\\Ops_Archive_BB16D93442",
+      "created_at": "2026-03-22T16:51:31",
+      "files": [
+        {
+          "path": "D:\\OBSOSv2\\OBSOS\\obsidyn-see\\data\\decoys\\Ops_Archive_BB16D93442\\Ops_Rotation_Grid.csv",
+          "size": 103,
+          "last_modified": 1774198291102619600,
+          "last_accessed": 1774251650500491500,
+          "sha256": "d18226878ede954faa9245b6fdcb7396d0657913f0b80ac42bec1344c8039ff5"
+        },
+        {
+          "path": "D:\\OBSOSv2\\OBSOS\\obsidyn-see\\data\\decoys\\Ops_Archive_BB16D93442\\Containment_Checklist.md",
+          "size": 111,
+          "last_modified": 1774198291137909600,
+          "last_accessed": 1774251650501498400,
+          "sha256": "b17164b62ada4a1840373a7122e1b57d416693cb41e6d47117f23788d0754ef8"
+        },
+        {
+          "path": "D:\\OBSOSv2\\OBSOS\\obsidyn-see\\data\\decoys\\Ops_Archive_BB16D93442\\Transit_Access_Brief.txt",
+          "size": 132,
+          "last_modified": 1774198291153126500,
+          "last_accessed": 1774251650501498400,
+          "sha256": "49725861c89522996e595b2f14581e0f73a5c7a2d2102ebc87043052833e6266"
+        }
+      ],
+      "alerts": [
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Containment_Checklist.md",
+          "timestamp": "2026-03-23T07:40:45"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Transit_Access_Brief.txt",
+          "timestamp": "2026-03-23T07:40:45"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Ops_Rotation_Grid.csv",
+          "timestamp": "2026-03-23T07:40:48"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Containment_Checklist.md",
+          "timestamp": "2026-03-23T07:40:48"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Transit_Access_Brief.txt",
+          "timestamp": "2026-03-23T07:40:48"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Ops_Rotation_Grid.csv",
+          "timestamp": "2026-03-23T07:40:48"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Containment_Checklist.md",
+          "timestamp": "2026-03-23T07:40:48"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Transit_Access_Brief.txt",
+          "timestamp": "2026-03-23T07:40:48"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Ops_Rotation_Grid.csv",
+          "timestamp": "2026-03-23T07:40:50"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Containment_Checklist.md",
+          "timestamp": "2026-03-23T07:40:50"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Transit_Access_Brief.txt",
+          "timestamp": "2026-03-23T07:40:50"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Ops_Rotation_Grid.csv",
+          "timestamp": "2026-03-23T07:40:50"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Containment_Checklist.md",
+          "timestamp": "2026-03-23T07:40:50"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Transit_Access_Brief.txt",
+          "timestamp": "2026-03-23T07:40:50"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Ops_Rotation_Grid.csv",
+          "timestamp": "2026-03-23T07:40:50"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Containment_Checklist.md",
+          "timestamp": "2026-03-23T07:40:50"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Transit_Access_Brief.txt",
+          "timestamp": "2026-03-23T07:40:50"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Ops_Rotation_Grid.csv",
+          "timestamp": "2026-03-23T07:40:50"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Containment_Checklist.md",
+          "timestamp": "2026-03-23T07:40:50"
+        },
+        {
+          "kind": "FILE_TOUCHED",
+          "message": "Honeyfile access timestamp advanced",
+          "vault": "Ops_Archive_BB16D93442",
+          "file": "Transit_Access_Brief.txt",
+          "timestamp": "2026-03-23T07:40:50"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:37:50"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:37:55"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:37:55"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:37:55"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:38:00"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:38:00"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:38:00"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:38:00"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:38:00"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:38:00"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:38:28"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:38:28"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:38:28"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:38:28"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:38:28"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:38:28"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:38:33"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:38:33"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:38:33"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:38:51"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:38:51"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:38:51"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:38:51"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:38:51"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:38:51"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:38:56"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:38:56"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:38:56"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:39:15"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:39:15"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:39:15"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:39:15"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:39:15"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:39:15"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:39:19"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:39:19"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:39:19"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:39:38"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:39:38"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:39:38"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:39:38"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:39:38"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:39:38"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:39:43"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:39:43"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:39:43"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:39:44"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:39:44"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:39:44"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:40:05"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:40:05"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:40:05"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:40:05"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:40:05"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:40:05"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:40:09"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:40:09"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:40:09"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:40:25"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:40:25"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:40:25"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:40:25"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:40:25"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:40:25"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:40:30"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:40:30"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:40:30"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:40:31"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:40:31"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:40:31"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:40:32"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:40:32"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:40:32"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:40:35"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:40:35"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:40:35"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:40:40"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:40:40"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:40:40"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:40:45"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:40:45"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:40:45"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:40:48"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:40:48"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:40:48"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:40:48"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:40:48"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:40:48"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:40:50"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:40:50"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:40:50"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:40:50"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:40:50"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:40:50"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:40:50"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:40:50"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:40:50"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Ops_Rotation_Grid.csv",
+      "timestamp": "2026-03-23T07:40:50"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Containment_Checklist.md",
+      "timestamp": "2026-03-23T07:40:50"
+    },
+    {
+      "kind": "FILE_TOUCHED",
+      "message": "Honeyfile access timestamp advanced",
+      "vault": "Ops_Archive_BB16D93442",
+      "file": "Transit_Access_Brief.txt",
+      "timestamp": "2026-03-23T07:40:50"
+    }
+  ]
+}

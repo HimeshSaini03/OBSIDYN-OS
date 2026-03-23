@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBSIDYN - Secure Execution Environment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- LOGIN SCREEN -->
+    <div id="login-screen" class="screen active">
+        <div class="login-wrapper">
+            <div class="login-panel">
+                <div class="brand-logo">
+                    <div class="logo-icon">🛡️</div>
+                    <h1>OBSIDYN</h1>
+                </div>
+                <p class="tagline">Secure Execution Environment</p>
+                
+                <div class="login-form">
+                    <div class="form-group">
+                        <label for="master-password">Master Key</label>
+                        <input type="password" id="master-password" placeholder="Enter your master key" autocomplete="off">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="security-mode">Security Profile</label>
+                        <select id="security-mode">
+                            <option value="PERSONAL">Personal - Balanced Security</option>
+                            <option value="WORK">Work - Extended Sessions</option>
+                            <option value="PUBLIC">Public - Maximum Security</option>
+                        </select>
+                    </div>
+                    
+                    <button id="authenticate-btn" class="btn-primary">
+                        <span>Authenticate</span>
+                    </button>
+                    
+                    <div id="login-status" class="status-message"></div>
+                </div>
+                
+                <div class="login-footer">
+                    <span class="security-indicator">🔒 End-to-End Encrypted</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN APPLICATION -->
+    <div id="app-screen" class="screen">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-left">
+                <div class="brand-logo-small">
+                    <span class="logo-icon">🛡️</span>
+                    <span class="brand-name">OBSIDYN</span>
+                </div>
+            </div>
+            
+            <div class="header-center">
+                <div class="status-bar">
+                    <div class="status-item">
+                        <span class="status-label">Session:</span>
+                        <span id="session-timer" class="status-value">00:00</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Profile:</span>
+                        <span id="active-profile" class="status-value profile-badge">PERSONAL</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Vault:</span>
+                        <span id="vault-status" class="status-value">0 Items</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <button id="lock-btn" class="btn-icon" title="Lock System">
+                    <span>🔒</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="app-body">
+            <!-- Sidebar Navigation -->
+            <aside class="sidebar">
+                <nav class="nav-menu">
+                    <button class="nav-item active" data-section="dashboard">
+                        <span class="nav-icon">📊</span>
+                        <span class="nav-label">Dashboard</span>
+                    </button>
+                    <button class="nav-item" data-section="vault">
+                        <span class="nav-icon">🔐</span>
+                        <span class="nav-label">Vault Manager</span>
+                    </button>
+                    <button class="nav-item" data-section="secure-shred">
+                        <span class="nav-icon">⚠️</span>
+                        <span class="nav-label">Secure Shred</span>
+                    </button>
+                    <button class="nav-item" data-section="steganography">
+                        <span class="nav-icon">🖼️</span>
+                        <span class="nav-label">Steganography</span>
+                    </button>
+                    <button class="nav-item" data-section="settings">
+                        <span class="nav-icon">⚙️</span>
+                        <span class="nav-label">Settings</span>
+                    </button>
+                </nav>
+            </aside>
+
+            <!-- Content Area -->
+            <main class="content-main">
+                <!-- Dashboard Section -->
+                <section id="dashboard-section" class="content-section active">
+                    <div class="section-header">
+                        <h2>Security Dashboard</h2>
+                        <p class="section-subtitle">Real-time security status and system overview</p>
+                    </div>
+                    
+                    <div class="dashboard-grid">
+                        <div class="info-card">
+                            <div class="card-header">
+                                <span class="card-icon">🔐</span>
+                                <h3>Encryption</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="metric-value">AES-256-GCM</div>
+                                <div class="metric-label">Active Protocol</div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="card-header">
+                                <span class="card-icon">📦</span>
+                                <h3>Protected Assets</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="metric-value" id="dashboard-vault-count">0</div>
+                                <div class="metric-label">Files Encrypted</div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="card-header">
+                                <span class="card-icon">🛡️</span>
+                                <h3>Security Level</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="metric-value" id="dashboard-security-level">HIGH</div>
+                                <div class="metric-label">Current Status</div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="card-header">
+                                <span class="card-icon">⏱️</span>
+                                <h3>Auto-Lock</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="metric-value" id="dashboard-autolock">10:00</div>
+                                <div class="metric-label">Time Remaining</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-panel">
+                        <h3>Recent Activity</h3>
+                        <div id="activity-log" class="activity-log">
+                            <div class="activity-empty">No recent activity</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Vault Manager Section -->
+                <section id="vault-section" class="content-section">
+                    <div class="section-header">
+                        <h2>Vault Manager</h2>
+                        <p class="section-subtitle">Manage your encrypted files and folders</p>
+                    </div>
+                    
+                    <div class="toolbar">
+                        <button id="btn-lock-file" class="btn-primary">
+                            <span>📁</span> Lock File
+                        </button>
+                        <button id="btn-lock-folder" class="btn-primary">
+                            <span>📂</span> Lock Folder
+                        </button>
+                        <button id="btn-refresh-vault" class="btn-secondary">
+                            <span>🔄</span> Refresh
+                        </button>
+                    </div>
+                    
+                    <div class="vault-panel">
+                        <div class="vault-header">
+                            <span>Encrypted Assets</span>
+                            <span id="vault-count-label" class="badge">0 items</span>
+                        </div>
+                        <div id="vault-list" class="vault-list">
+                            <div class="empty-state">
+                                <div class="empty-icon">🔒</div>
+                                <p>No encrypted files yet</p>
+                                <span>Lock a file to get started</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+               <!-- Secure Shred Section -->
+<section id="secure-shred-section" class="content-section">
+    <div class="section-header">
+        <h2>⚠️ Oblivion Shredder</h2>
+        <p class="section-subtitle">Military-grade permanent file destruction</p>
+    </div>
+    
+    <!-- Warning Banner -->
+    <div class="shred-warning-banner">
+        <div class="warning-icon-pulse">
+            <span class="warning-triangle">⚠️</span>
+        </div>
+        <div class="warning-content">
+            <h3>IRREVERSIBLE DESTRUCTION</h3>
+            <p>Files shredded with this tool cannot be recovered by any means. This includes forensic recovery tools, data recovery software, and law enforcement techniques.</p>
+        </div>
+    </div>
+
+    <!-- Main Shred Interface -->
+    <div class="shred-interface">
+        <!-- Drag & Drop Zone -->
+        <div class="drop-zone" id="shred-drop-zone">
+            <div class="drop-zone-content">
+                <div class="shred-icon-large">🔥</div>
+                <h3>Drop Files to Shred</h3>
+                <p>or</p>
+                <button id="btn-shred-file" class="btn-shred-primary">
+                    <span class="btn-icon">🗑️</span>
+                    <span class="btn-text">Select File to Destroy</span>
+                </button>
+                <p class="drop-hint">Supports: Documents, Images, Videos, Archives, Executables</p>
+            </div>
+        </div>
+
+        <!-- Selected File Info -->
+        <div id="shred-file-info" class="shred-file-info hidden">
+            <div class="file-info-header">
+                <span class="file-icon">📄</span>
+                <div class="file-details">
+                    <div class="file-name" id="shred-filename">filename.txt</div>
+                    <div class="file-meta">
+                        <span id="shred-filesize">0 KB</span> • 
+                        <span id="shred-filepath">C:\path\to\file</span>
+                    </div>
+                </div>
+                <button id="btn-remove-file" class="btn-remove" title="Remove file">✕</button>
+            </div>
+        </div>
+
+        <!-- Shred Options -->
+        <div class="shred-options" id="shred-options">
+            <h4>Destruction Method</h4>
+            <div class="method-selector">
+                <label class="method-option active">
+                    <input type="radio" name="shred-method" value="dod5220" checked>
+                    <div class="method-card">
+                        <div class="method-icon">🔐</div>
+                        <div class="method-info">
+                            <div class="method-name">DoD 5220.22-M</div>
+                            <div class="method-desc">3-pass overwrite (Recommended)</div>
+                        </div>
+                    </div>
+                </label>
+                <label class="method-option">
+                    <input type="radio" name="shred-method" value="gutmann">
+                    <div class="method-card">
+                        <div class="method-icon">🛡️</div>
+                        <div class="method-info">
+                            <div class="method-name">Gutmann</div>
+                            <div class="method-desc">35-pass maximum security</div>
+                        </div>
+                    </div>
+                </label>
+                <label class="method-option">
+                    <input type="radio" name="shred-method" value="random">
+                    <div class="method-card">
+                        <div class="method-icon">⚡</div>
+                        <div class="method-info">
+                            <div class="method-name">Random Overwrite</div>
+                            <div class="method-desc">7-pass random data</div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="shred-checkboxes">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="shred-confirm-check" checked>
+                    <span class="checkmark"></span>
+                    <span class="checkbox-text">I understand this action cannot be undone</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="shred-wipe-name">
+                    <span class="checkmark"></span>
+                    <span class="checkbox-text">Also wipe filename from directory</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Execute Shred Button -->
+        <button id="btn-execute-shred" class="btn-shred-execute hidden">
+            <span class="execute-icon">💀</span>
+            <span class="execute-text">PERMANENTLY DESTROY FILE</span>
+            <span class="execute-subtext">This is your last warning</span>
+        </button>
+    </div>
+
+    <!-- Shred Progress Modal -->
+    <div id="shred-progress-modal" class="shred-progress-modal hidden">
+        <div class="progress-container">
+            <div class="progress-header">
+                <div class="shred-animation">
+                    <div class="shredder-blade"></div>
+                    <div class="file-being-shredded"></div>
+                </div>
+                <h3>Destroying File...</h3>
+            </div>
+            
+            <div class="progress-steps">
+                <div class="progress-step active" id="step-1">
+                    <div class="step-icon">📂</div>
+                    <div class="step-label">Overwriting Data</div>
+                    <div class="step-bar"><div class="step-progress"></div></div>
+                </div>
+                <div class="progress-step" id="step-2">
+                    <div class="step-icon">🔀</div>
+                    <div class="step-label">Randomizing Sectors</div>
+                    <div class="step-bar"><div class="step-progress"></div></div>
+                </div>
+                <div class="progress-step" id="step-3">
+                    <div class="step-icon">🗑️</div>
+                    <div class="step-label">Removing References</div>
+                    <div class="step-bar"><div class="step-progress"></div></div>
+                </div>
+                <div class="progress-step" id="step-4">
+                    <div class="step-icon">✅</div>
+                    <div class="step-label">Verification</div>
+                    <div class="step-bar"><div class="step-progress"></div></div>
+                </div>
+            </div>
+
+            <div class="progress-details">
+                <div class="detail-item">
+                    <span class="detail-label">Pass:</span>
+                    <span class="detail-value" id="shred-pass">1/3</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Progress:</span>
+                    <span class="detail-value" id="shred-percent">0%</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Time Remaining:</span>
+                    <span class="detail-value" id="shred-time">--:--</span>
+                </div>
+            </div>
+
+            <div class="progress-bar-container">
+                <div class="progress-bar-shred" id="shred-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="shred-success-modal" class="shred-success-modal hidden">
+        <div class="success-container">
+            <div class="success-icon">💥</div>
+            <h3>File Permanently Destroyed</h3>
+            <p id="shred-success-message">The file has been securely shredded and cannot be recovered.</p>
+            <button id="btn-shred-another" class="btn-secondary">Shred Another File</button>
+        </div>
+    </div>
+
+    <!-- Info Panel -->
+    <div class="shred-info-panel">
+        <h4>🔒 How Secure Shredding Works</h4>
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-icon">1️⃣</div>
+                <div class="info-text">
+                    <strong>Overwrite</strong>
+                    <span>File content replaced with random data multiple times</span>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">2️⃣</div>
+                <div class="info-text">
+                    <strong>Zero Fill</strong>
+                    <span>All sectors written with zeros to eliminate traces</span>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">3️⃣</div>
+                <div class="info-text">
+                    <strong>Delete</strong>
+                    <span>File reference removed from filesystem tables</span>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">4️⃣</div>
+                <div class="info-text">
+                    <strong>Verify</strong>
+                    <span>Confirmation that data is unrecoverable</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="security-note">
+            <strong>🛡️ Military-Grade Security:</strong>
+            Our shredding algorithms meet DoD 5220.22-M standards, making data recovery impossible even with advanced forensic tools.
+        </div>
+    </div>
+</section>
+                              <!-- Steganography Section -->
+                <section id="steganography-section" class="content-section">
+                    <div class="section-header">
+                        <h2>🖼️ Pixel Veil</h2>
+                        <p class="section-subtitle">Hide any file inside an image using advanced steganography</p>
+                    </div>
+                    
+                    <!-- Operation Tabs -->
+                    <div class="steg-tabs">
+                        <button class="steg-tab active" data-tab="hide">🔒 Hide Data</button>
+                        <button class="steg-tab" data-tab="extract">🔓 Extract Data</button>
+                        <button class="steg-tab" data-tab="scan">🔍 Scan Image</button>
+                    </div>
+                    
+                    <!-- Hide Data Panel -->
+                    <div id="steg-hide-panel" class="steg-panel active">
+                        <div class="steg-form">
+                            <div class="form-row">
+                                <label>📄 Data File to Hide</label>
+                                <div class="file-input-group">
+                                    <input type="text" id="hide-data-file" placeholder="No file selected" readonly>
+                                    <button id="btn-select-data-file" class="btn-sm">Browse</button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <label>🖼️ Carrier Image</label>
+                                <div class="file-input-group">
+                                    <input type="text" id="hide-carrier-image" placeholder="No image selected" readonly>
+                                    <button id="btn-select-carrier" class="btn-sm">Browse</button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <label>🔐 Password (Optional)</label>
+                                <input type="password" id="hide-password" placeholder="Leave empty for no password">
+                            </div>
+                            
+                            <div class="form-row">
+                                <label>💾 Save As</label>
+                                <div class="file-input-group">
+                                    <input type="text" id="hide-output-path" placeholder="Auto-generated if empty" readonly>
+                                    <button id="btn-select-output" class="btn-sm">Choose...</button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <label>📊 Capacity Check</label>
+                                <div id="capacity-display" class="capacity-bar">
+                                    <span class="capacity-text">Select files to check capacity</span>
+                                </div>
+                            </div>
+                            
+                            <button id="btn-execute-hide" class="btn-primary btn-large">
+                                <span>✨ Encode & Hide</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Extract Data Panel -->
+                    <div id="steg-extract-panel" class="steg-panel">
+                        <div class="steg-form">
+                            <div class="form-row">
+                                <label>🖼️ Image with Hidden Data</label>
+                                <div class="file-input-group">
+                                    <input type="text" id="extract-image" placeholder="No image selected" readonly>
+                                    <button id="btn-select-extract-image" class="btn-sm">Browse</button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <label>🔐 Password (if set during hide)</label>
+                                <input type="password" id="extract-password" placeholder="Enter password if protected">
+                            </div>
+                            
+                            <div class="form-row">
+                                <label>💾 Extract To</label>
+                                <div class="file-input-group">
+                                    <input type="text" id="extract-output-path" placeholder="Choose save location" readonly>
+                                    <button id="btn-select-extract-output" class="btn-sm">Choose...</button>
+                                </div>
+                            </div>
+                            
+                            <button id="btn-execute-extract" class="btn-primary btn-large">
+                                <span>🔓 Decode & Extract</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Scan Panel -->
+                    <div id="steg-scan-panel" class="steg-panel">
+                        <div class="steg-form">
+                            <div class="form-row">
+                                <label>🖼️ Image to Scan</label>
+                                <div class="file-input-group">
+                                    <input type="text" id="scan-image" placeholder="No image selected" readonly>
+                                    <button id="btn-select-scan-image" class="btn-sm">Browse</button>
+                                </div>
+                            </div>
+                            
+                            <button id="btn-execute-scan" class="btn-primary btn-large">
+                                <span>🔍 Analyze Image</span>
+                            </button>
+                            
+                            <div id="scan-result" class="scan-result hidden">
+                                <div class="scan-result-header">
+                                    <span class="scan-icon">📋</span>
+                                    <span class="scan-title">Analysis Result</span>
+                                </div>
+                                <div id="scan-result-content" class="scan-result-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Loading Animation Overlay -->
+                    <div id="steg-loading" class="steg-loading hidden">
+                        <div class="loading-container">
+                            <div class="loading-title">Encoding Data...</div>
+                            <div class="pixel-grid" id="pixel-grid"></div>
+                            <div class="loading-progress">
+                                <div class="progress-bar" id="progress-bar"></div>
+                            </div>
+                            <div class="loading-status" id="loading-status">Initializing...</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Info Panel -->
+                    <div class="steg-info">
+                        <h4>🔐 How Pixel Veil Works</h4>
+                        <ul>
+                            <li><strong>Compression:</strong> Files are ZIP-compressed before hiding (40-60% size reduction)</li>
+                            <li><strong>Encryption:</strong> AES-256-GCM encryption if password is set</li>
+                            <li><strong>Steganography:</strong> Data hidden in LSB of RGB pixels using adaptive algorithm</li>
+                            <li><strong>Undetectable:</strong> Output image is visually identical; PSNR &gt; 40dB</li>
+                            <li><strong>OBSIDYN Signature:</strong> Only our system can detect and extract hidden data</li>
+                        </ul>
+                        
+                        <h4 style="margin-top: 20px;">📏 Capacity Guide</h4>
+                        <div class="capacity-grid">
+                            <div class="capacity-item">
+                                <span class="capacity-size">640×480</span>
+                                <span class="capacity-value">~900 KB</span>
+                            </div>
+                            <div class="capacity-item">
+                                <span class="capacity-size">1920×1080</span>
+                                <span class="capacity-value">~5.5 MB</span>
+                            </div>
+                            <div class="capacity-item">
+                                <span class="capacity-size">3840×2160 (4K)</span>
+                                <span class="capacity-value">~22 MB</span>
+                            </div>
+                            <div class="capacity-item">
+                                <span class="capacity-size">8MP Photo</span>
+                                <span class="capacity-value">~16 MB</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Settings Section -->
+                <section id="settings-section" class="content-section">
+                    <div class="section-header">
+                        <h2>Settings</h2>
+                        <p class="section-subtitle">Tune runtime behavior, privacy controls, and interface posture.</p>
+                    </div>
+                    
+                    <div class="settings-grid">
+                        <div class="settings-card">
+                            <div class="operator-card-head">
+                                <h3>Session Runtime</h3>
+                                <button id="btn-save-app-settings" class="btn-primary">Apply Runtime Settings</button>
+                            </div>
+                            <div class="setting-control">
+                                <label for="autolock-minutes">Minutes of inactivity</label>
+                                <input type="number" id="autolock-minutes" value="10" min="1" max="60">
+                            </div>
+                            <div class="setting-control">
+                                <label for="settings-profile">Default profile</label>
+                                <select id="settings-profile">
+                                    <option value="PERSONAL">Personal</option>
+                                    <option value="WORK">Work</option>
+                                    <option value="PUBLIC">Public</option>
+                                </select>
+                            </div>
+                            <div id="settings-status" class="status-message info">Runtime settings are synchronized from the engine.</div>
+                        </div>
+                        
+                        <div class="settings-card">
+                            <h3>Privacy Surface</h3>
+                            <div class="setting-toggle-list">
+                                <label class="setting-toggle">
+                                    <div>
+                                        <strong>Privacy mode</strong>
+                                        <span>Prefer quieter runtime behavior and lower visible trace.</span>
+                                    </div>
+                                    <input type="checkbox" id="settings-privacy-mode">
+                                </label>
+                                <label class="setting-toggle">
+                                    <div>
+                                        <strong>Store full paths</strong>
+                                        <span>Keep original source paths in metadata instead of masking them.</span>
+                                    </div>
+                                    <input type="checkbox" id="settings-store-full-paths">
+                                </label>
+                                <label class="setting-toggle">
+                                    <div>
+                                        <strong>Login binary field</strong>
+                                        <span>Show the animated binary atmosphere only on the login screen.</span>
+                                    </div>
+                                    <input type="checkbox" id="settings-login-binary">
+                                </label>
+                                <label class="setting-toggle">
+                                    <div>
+                                        <strong>Reduced motion</strong>
+                                        <span>Trim interface animation and motion intensity for a quieter surface.</span>
+                                    </div>
+                                    <input type="checkbox" id="settings-reduced-motion">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3>Visual Recovery Access</h3>
+                            <div class="setting-toggle-list">
+                                <label class="setting-toggle">
+                                    <div>
+                                        <strong>Allow visual recovery on login</strong>
+                                        <span>Show face + gesture recovery on the login screen when an enrollment exists.</span>
+                                    </div>
+                                    <input type="checkbox" id="settings-visual-recovery-enabled">
+                                </label>
+                            </div>
+                            <div id="settings-recovery-status" class="status-message info">Recovery enrollment state will appear here.</div>
+                            <div class="toolbar settings-toolbar">
+                                <button id="btn-settings-open-recovery" class="btn-secondary">Open Operator Recovery</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

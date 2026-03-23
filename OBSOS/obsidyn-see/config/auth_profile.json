@@ -1,0 +1,75 @@
+{
+  "master_hash": "81fd66a656265639112e3295c849ee56a2dced52297ca0adb985a180156e336c",
+  "created_at": "2026-03-22T14:21:52",
+  "updated_at": "2026-03-23T07:40:25",
+  "lock_name": "Rhythm Lock",
+  "keystroke_profile": {
+    "samples": [
+      {
+        "dwell_mean": 104.0,
+        "dwell_std": 9.870591240071256,
+        "flight_mean": 3702.8333333333335,
+        "flight_std": 2446.805905438535,
+        "total_duration": 23821.0,
+        "key_count": 7,
+        "correction_ratio": 0.0,
+        "captured_at": "2026-03-23T07:38:28"
+      },
+      {
+        "dwell_mean": 97.0,
+        "dwell_std": 12.20070255588353,
+        "flight_mean": 2174.714285714286,
+        "flight_std": 1617.6235403725266,
+        "total_duration": 15223.0,
+        "key_count": 8,
+        "correction_ratio": 0.0,
+        "captured_at": "2026-03-23T07:38:51"
+      },
+      {
+        "dwell_mean": 107.42857142857143,
+        "dwell_std": 15.425925699077816,
+        "flight_mean": 2278.5714285714284,
+        "flight_std": 1733.2915719720636,
+        "total_duration": 15951.0,
+        "key_count": 8,
+        "correction_ratio": 0.0,
+        "captured_at": "2026-03-23T07:39:15"
+      },
+      {
+        "dwell_mean": 95.14285714285714,
+        "dwell_std": 18.31025139429956,
+        "flight_mean": 2283.1428571428573,
+        "flight_std": 1625.4967090155576,
+        "total_duration": 15982.0,
+        "key_count": 8,
+        "correction_ratio": 0.0,
+        "captured_at": "2026-03-23T07:39:38"
+      },
+      {
+        "dwell_mean": 85.28571428571429,
+        "dwell_std": 20.526737168276654,
+        "flight_mean": 2683.4285714285716,
+        "flight_std": 2074.661683754924,
+        "total_duration": 18784.0,
+        "key_count": 8,
+        "correction_ratio": 0.0,
+        "captured_at": "2026-03-23T07:40:05"
+      },
+      {
+        "dwell_mean": 85.875,
+        "dwell_std": 17.41003661684834,
+        "flight_mean": 1040.625,
+        "flight_std": 750.6778499296486,
+        "total_duration": 8325.0,
+        "key_count": 9,
+        "correction_ratio": 0.1111111111111111,
+        "captured_at": "2026-03-23T07:40:25"
+      }
+    ],
+    "sample_count": 6,
+    "last_score": 1.991,
+    "last_result": "VERIFIED",
+    "threshold": 3.4,
+    "minimum_training_samples": 5
+  }
+}
